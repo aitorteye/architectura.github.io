@@ -71,6 +71,7 @@
     #login {
         width: 150px;
         height: 55px;
+        padding: 10px 40px;
         color: #000000;
         background: none;
         border: 2px solid rgb(0, 0, 0);
@@ -143,6 +144,39 @@
         align-items: center;
         gap: 1.5rem;
     }
-    .con_where{
-        color: black
+    .con_where h1{
+        font-size: 3.4rem;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        margin-bottom: 50px;
     }
+    .con_where p{
+        font-size: 1.934rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        margin: 0.5rem 0 1.4rem;
+        text-align: justify;
+        margin-right: 20px;
+    }
+    #btn_contacto {
+        width: 150px;
+        height: 55px;
+        padding: 10px 40px;
+        color: #ffffff;
+        background: none;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        transition: .5s;
+    }
+      
+    #btn_contacto:hover {
+        background: #000000 !important;
+        color: rgb(255, 255, 255) !important;
+    }
+    .mapa{
+        border-radius: 15px;
+    }
+
+
