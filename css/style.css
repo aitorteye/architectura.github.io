@@ -99,17 +99,18 @@
     } 
     body{
         background-color: #000000;
+        margin: 0;
+        padding: 0;
     }
     body .hero{
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background: url('../imagenes/fondo4.jpg') no-repeat center center fixed ;
+        background: url('../images/fondo4.jpg') no-repeat center center fixed ;
         background-size: cover;
         background-position: center;
         opacity: 0.9;
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
         z-index: -1;
     
     }
@@ -132,10 +133,13 @@
         font-size: 2rem;
         margin-bottom: 20px;
     }
+    .una {
+        left: 2px;
+    }
     .where{
         width: 100%;
         min-height: 100vh;
-        background: url(../imagenes/fondo_home.jpg);
+        background: url(../images/fondo_home.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -177,6 +181,70 @@
     }
     .mapa{
         border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: 300p;
     }
-
-
+    .proyect{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('../images/fondo4.jpg') no-repeat center center fixed ;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+    .house1, .house2, .house3{
+        width: 33.33%;
+        float: left;
+        height: 300px;
+    }
+    .hou1, .hou2, .hou3{
+        width: 20vw;
+        height: auto;
+        margin: 50px;
+    }
+    .who{
+        width: 100vw;
+        padding-top: 50px;
+        background: rgb(150, 150, 150);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+        align-items: center;
+        gap: 1.5rem;
+        display: inline-block;
+    }
+    .con_who{
+        display: flex;
+        align-items: center;
+    }
+    .con_who h1{
+        font-size: 3.4rem;
+        color: #fff;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .con_who p{
+        font-size: 1.534rem;
+        color: #fff;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 30px;
+    }
+    .column1, .foto_who{
+        width: 50%;
+        float: left;
+    }
+    .foto_who{
+        justify-items: center;
+    }
+    .foto{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }

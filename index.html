@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <head>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pdcc.min.css">
+<script charset="utf-8" src="js/pdcc.min.js"></script>
+<script type="text/javascript">
+PDCookieConsent.config({
+"defaultLang" : "es",
+"brand": {
+"dev" : false,
+"name": "PRUEBAS",
+"url" : "https://localhost",
+"websiteOwner" : "PRUEBAS"
+},
+"cookiePolicyLink": "http://architectura/cookies.php",
+"hideModalIn": ["http://architectura/cookies.php"],
+"styles": {
+"primaryButton": {
+"bgColor" : "#A1FFA1",
+"txtColor": "#036900"
+},
+"secondaryButton": {
+"bgColor" : "#EEEEEE",
+"txtColor": "#333333"
+}
+}
+});
+</script>
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="nombre">
-            <a class="aitor" href="../index.html" width="75px"><img class="logo" src="../imagenes/logo_empresa.jpg" width="75px"></a>
+            <a class="aitor" href="../index.html" width="75px"><img class="logo" src="images/logo_empresa.jpg" width="75px"></a>
         </div>
         <nav id="lin" class="navigation">
             <a class="boton" href="#">¿DONDE ESTAMOS?</a>
             <a class="boton" href="#">PROYECTOS</a>
             <a class="boton" href="#">SOBRE NOSOTROS</a>
-            <button id="login" href="../CONTACTO/contacto.html">CONTACTO</button>
+            <button id="login" href="#">CONTACTO</button>
             <button class="register">SERVICIOS</button>
         </nav>
     </header>
     <div class="hero">
         <section class="container">
             <h1 class="hero_titulo">ARCHITECTURA</h1>
-            <p class="hero_paragrafo">Te quieres mudar y no encuentras casas que te gusten? Nosotros te ayudamos a encontrar una.</p>
+            <p class="hero_paragrafo">Te quieres mudar y no encuentras casas que te gusten? Nosotros te ayudamos a encontrar <span class="una">una.</span></p>
         </section>
     </div>
     <section class="where">
@@ -28,9 +53,45 @@
             <h1>¿DONDE ESTAMOS?</h1>
             <p>Nos situaremos en Viladecans ya que es donde nos va mejor a los trabajadores, aparte justo estamos al lado de un terreno grandioso el cual utilizaremos para construir nuestras casas.</p>
         </div>
-        <div class="map">
+        <section class="map">
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11985.974225998521!2d2.023134415682005!3d41.31987980480596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49cf5763585c3%3A0x43eea49e2af85bcb!2sCarretera%20de%20Barcelona%2C%2061%2C%2008840%20Viladecans%2C%20Barcelona!5e0!3m2!1sca!2ses!4v1684172011357!5m2!1sca!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </section>
+    <section class="proyect">
+        <div class="proyect_titulo">
+            <h1>PROYECTOS</h1>
         </div>
+        <div id="houses">
+            <div class="house1">
+                <img class="hou1" src="images/moderna.jpg">
+                <h1>Moderna</h1>
+            </div>
+            <div class="house2">
+                <img class="hou2" src="images/clasica.jpg">
+                <h1>Clasica</h1>
+            </div>
+            <div class="house3">
+                <img class="hou3" src="images/rustica.jpg">
+                <h1>Rustica</h1>
+            </div>
+        </div>
+    </section>
+    <section class="who">
+        <div class="con_who">
+                <div class="column1">
+                    <h1 class="h1_who">SOBRE NOSOTROS</h1>
+                    <p>Architectura es una empresa de arquitectura comprometida con la construcción de hogares para familias. Nuestros dos arquitectos altamente capacitados trabajan para crear espacios únicos y funcionales que reflejen el estilo y la personalidad de nuestros clientes. Valoramos la creatividad arquitectónica y ofrecemos soluciones prácticas que superan las expectativas. Trabajamos estrechamente con nuestros clientes, desde el diseño hasta la entrega final, para convertir sus sueños en realidad. Nuestro enfoque personalizado y colaborativo nos distingue, y nos esforzamos por construir hogares que inspiren y enriquezcan la vida de las familias. ¡Contáctanos hoy mismo y permítenos ayudarte a construir el hogar perfecto para tu familia!</p>
+                </div>
+                <div class="foto_who">
+                    <img src="images/foto_donde.jpg" class="foto">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+
+    </section>
+    <section class="contact">
+
     </section>
 </body>
 </html>
