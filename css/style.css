@@ -107,7 +107,11 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+<<<<<<< HEAD
         background: url('../images/fondo4.jpg') no-repeat center center fixed ;
+=======
+        background: url('/images/fondo4.jpg') no-repeat center center fixed ;
+>>>>>>> 005dc920d99fa30b8da504a427f850bd942f4099
         background-size: cover;
         background-position: center;
         opacity: 0.9;
@@ -139,7 +143,11 @@
     .where{
         width: 100%;
         min-height: 100vh;
+<<<<<<< HEAD
         background: url(../images/fondo_home.jpg);
+=======
+        background: url(/images/fondo_home.jpg);
+>>>>>>> 005dc920d99fa30b8da504a427f850bd942f4099
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
