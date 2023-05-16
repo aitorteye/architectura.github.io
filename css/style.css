@@ -105,7 +105,7 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background: url('../imagenes/fondo4.jpg') no-repeat center center fixed ;
+        background: url('/images/fondo4.jpg') no-repeat center center fixed ;
         background-size: cover;
         background-position: center;
         opacity: 0.9;
@@ -135,7 +135,7 @@
     .where{
         width: 100%;
         min-height: 100vh;
-        background: url(../imagenes/fondo_home.jpg);
+        background: url(/images/fondo_home.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
