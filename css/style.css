@@ -18,7 +18,7 @@
         color: #ffffff;
         text-align: justify;
         padding: 2rem 9%;
-        z-index: 9999;
+        z-index: 1;
         background-color: rgba(255, 255, 255, 0.5);
         top: 0;
     }
@@ -27,7 +27,7 @@
         top: 0;
         left: 0;
         right: 20px;
-        height: 100%;
+        height: auto;
         margin: 20px;
         margin-top: 30px;
         text-align: right;
@@ -107,13 +107,10 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-<<<<<<< HEAD
         background: url('../images/fondo4.jpg') no-repeat center center fixed ;
-=======
-        background: url('/images/fondo4.jpg') no-repeat center center fixed ;
->>>>>>> 005dc920d99fa30b8da504a427f850bd942f4099
         background-size: cover;
         background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
         opacity: 0.9;
         z-index: -1;
     
@@ -143,11 +140,7 @@
     .where{
         width: 100%;
         min-height: 100vh;
-<<<<<<< HEAD
         background: url(../images/fondo_home.jpg);
-=======
-        background: url(/images/fondo_home.jpg);
->>>>>>> 005dc920d99fa30b8da504a427f850bd942f4099
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -195,19 +188,34 @@
         height: 300p;
     }
     .proyect{
-        display: flex;
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        display: block;
         justify-content: center;
+        justify-items: center;
         align-items: center;
-        min-height: 100vh;
+        color: #fff;
+        min-height: 70vh;
         background: url('../images/fondo4.jpg') no-repeat center center fixed ;
         background-size: cover;
         background-position: center;
         z-index: -1;
+        gap: 1.5rem;
+    }
+    .proyect_titulo{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .proyect_titulo h1{
+        font-size: 3rem;
     }
     .house1, .house2, .house3{
+        color: #fff;
         width: 33.33%;
         float: left;
         height: 300px;
+        text-align: center;
     }
     .hou1, .hou2, .hou3{
         width: 20vw;
