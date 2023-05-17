@@ -147,6 +147,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
         align-items: center;
+        text-align: center;
         gap: 1.5rem;
     }
     .con_where h1{
@@ -155,6 +156,7 @@
         color: rgb(255, 255, 255);
         letter-spacing: 1px;
         margin-bottom: 50px;
+
     }
     .con_where p{
         font-size: 1.934rem;
@@ -244,8 +246,10 @@
         display: inline-block;
     }
     .con_who{
+        position: absolute;
         display: flex;
         align-items: center;
+        margin: 1rem;
     }
     .con_who h1{
         font-size: 3.4rem;
@@ -266,10 +270,12 @@
     }
     .foto_who{
         justify-items: center;
+        align-items: center;
     }
     .foto{
         display: block;
         margin: 0 auto;
-        max-width: 100%;
+        max-width: 70%;
         height: auto;
+        margin-bottom: 100px;
     }
