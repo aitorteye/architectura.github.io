@@ -1,39 +1,20 @@
-// Variables globales
-let camera, scene, renderer, controls;
+const btn = document.getElementById('button');
 
-// Función de inicialización
-function init() {
-  // Crear la escena
-  scene = new THREE.Scene();
+document.getElementById('con_form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-  // Crear la cámara
-  camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  camera.position.z = 5;
+   btn.value = 'Sending...';
 
-  // Crear el renderizador
-  renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  document.getElementById('houses').appendChild(renderer.domElement);
+   const serviceID = 'default_service';
+   const templateID = 'template_p3oyt2n';
 
-  // Crear controles de órbita para interactuar con el modelo
-  controls = new THREE.OrbitControls(camera, renderer.domElement);
-
-  // Cargar el modelo .obj
-  const loader = new THREE.OBJLoader();
-  loader.load('3D/casa.obj', function (object) {
-    scene.add(object);
-  });
-
-  // Iniciar el bucle de renderizado
-  animate();
-}
-
-// Función de animación
-function animate() {
-  requestAnimationFrame(animate);
-  renderer.render(scene, camera);
-  controls.update();
-}
-
-// Inicializar la aplicación
-init();
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

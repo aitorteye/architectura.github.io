@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+
+    <link rel="stylesheet" href="css/pdcc.min.css">
+<script charset="utf-8" src="js/pdcc.min.js"></script>
+<script type="text/javascript">
+PDCookieConsent.config({
+"defaultLang" : "es",
+"brand": {
+"dev" : false,
+"name": "PRUEBAS",
+"url" : "https://localhost",
+"websiteOwner" : "PRUEBAS"
+},
+"cookiePolicyLink": "http://architectura/cookies.php",
+"hideModalIn": ["http://architectura/cookies.php"],
+"styles": {
+"primaryButton": {
+"bgColor" : "#A1FFA1",
+"txtColor": "#036900"
+},
+"secondaryButton": {
+"bgColor" : "#EEEEEE",
+"txtColor": "#333333"
+}
+}
+});
+</script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="nombre">
+            <a class="aitor" href="../index.html" width="75px"><img class="logo" src="images/logo_empresa.jpg" width="75px"></a>
+        </div>
+        <nav id="lin" class="navigation">
+            <a class="boton" href="index.html#where">¿DONDE ESTAMOS?</a>
+            <a class="boton" href="index.html#proyect">PROYECTOS</a>
+            <a class="boton" href="index.html#who">SOBRE NOSOTROS</a>
+            <a id="login" href="contact.html">CONTACTO</a>
+            <a class="register">SERVICIOS</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="formu">
+            <form id="con_form">
+                <h2 class="contact_titulo">CONTACTANOS</h2>
+                <input type="text" id="name" name="name" placeholder="Tu nombre">
+                <input type="text" id="surname" name="surname" placeholder="Tus apellidos">
+                <input type="email" id="email" name="email" placeholder="Su email">  
+                <input type="tel" id="phone" name="phone" placeholder="Telefono" maxlength="11" pattern="[0-9]{11}">
+                <textarea id="casilla_duda" name="casilla_duda" rows="5" placeholder="Ponga aqui la pregunta que quiera hacernos."></textarea>
+                <button type="submit" id="button">Enviar</button>
+            </form>
+            <script src="js/script.js"></script>
+        </div>
+    </div>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+    <script type="text/javascript">
+        emailjs.init('2GQLHBB4JjBKSJw2b')
+    </script>
+</body>
+</html>

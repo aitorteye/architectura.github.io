@@ -23,13 +23,16 @@
         top: 0;
     }
     header nav {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
         position: fixed;
         top: 0;
         left: 0;
         right: 20px;
         height: auto;
         margin: 20px;
-        margin-top: 30px;
+        margin-top: 45px;
         text-align: right;
     }
     header .nombre .logo {
@@ -77,6 +80,18 @@
         border: 2px solid rgb(0, 0, 0);
         border-radius: 50px;
         transition: .5s;
+        cursor: pointer;
+    }
+    .register {
+        width: 150px;
+        height: 55px;
+        padding: 10px 40px;
+        color: #000000;
+        background: none;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        transition: .5s;
+        cursor: pointer;
     }
     header nav .register {
         width: 90px;
@@ -110,7 +125,7 @@
         background: url('../images/fondo4.jpg') no-repeat center center fixed ;
         background-size: cover;
         background-position: center;
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 98%, 0 87%);
         opacity: 0.9;
         z-index: -1;
     
@@ -137,7 +152,7 @@
     .una {
         left: 2px;
     }
-    .where{
+    #where{
         width: 100%;
         min-height: 100vh;
         background: rgb(150, 150, 150);
@@ -189,7 +204,7 @@
         max-width: 100%;
         height: 300p;
     }
-    .proyect{
+    #proyect{
         display: block;
         max-width: 100%;
         text-align: center;
@@ -232,7 +247,7 @@
     .hou1 h1{
         margin-top: 20px;
     }
-    .who{
+    #who{
         position: absolute;
         width: 100vw;
         padding-top: 50px;
