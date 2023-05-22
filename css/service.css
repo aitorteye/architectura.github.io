@@ -21,6 +21,7 @@ header {
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.5);
     top: 0;
+    margin-bottom: 20px;
 }
 header nav {
     align-items: center;
@@ -80,8 +81,9 @@ header nav .boton:hover::after {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 50px;
     transition: .5s;
+    cursor: pointer;
 }
-.register{
+.register {
     width: 150px;
     height: 55px;
     padding: 10px 40px;
@@ -120,11 +122,11 @@ body .hero{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 0;
     min-height: 100vh;
     background: url('../images/fondo4.jpg') no-repeat center center fixed ;
     background-size: cover;
     background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 98%, 0 87%);
     opacity: 0.9;
     z-index: -1;
 
@@ -141,89 +143,65 @@ body .hero{
     height: 90vh;
     position: absolute;
 }
-form{
+.hero_titulo{
+    font-size: 4rem;
+}
+.hero_paragrafo{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.transparent{
+    display: flex;
+
+    max-width: 100%;
     text-align: center;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    background: #fff;
+    color: #fff;
+    background: url('../images/fondo4.jpg') no-repeat center center fixed ;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    gap: 1.5rem;
+}
+#cableado img, #casas img, #planos img, #prefabri img{
+    width: 500px;
+    height: 500px;
+}
+main {
+    padding: 50px;
+    color: #fff;
+}
+main h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+}
+main p{
+    font-size: x-large;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-}
-form input, textarea{
-    width: 100%;
-}
-form h2{
-    color: #747474;
-    font-weight: 800;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    width: 500px;
-}
-form input, textarea{
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-    background-color: rgb(245, 245, 245);
-    font-size: 16px;
-}
-button {
-    font-family: inherit;
-    font-size: 18px;
-    background: linear-gradient(to bottom, #91999b 0%,#5d5e5f 100%);
-    color: white;
-    padding: 0.8em 1.2em;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;
-  }
-  
-  button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  button:active {
-    transform: scale(0.95);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  button span {
-    display: block;
-    margin-left: 0.4em;
-    transition: all 0.3s;
-  }
-  
-  button svg {
-    width: 18px;
-    height: 18px;
-    fill: white;
-    transition: all 0.3s;
-  }
-  
-  button .svg-wrapper {
+    text-align: center;
+}
+
+article {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-right: 0.5em;
-    transition: all 0.3s;
-  }
-  
-  button:hover .svg-wrapper {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  button:hover svg {
-    transform: rotate(45deg);
-  }
+    align-items: center;
+    margin-top: 20px;
+}
+
+figure {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+p {
+    margin: 0;
+}

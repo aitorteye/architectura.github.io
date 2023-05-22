@@ -21,6 +21,7 @@
         z-index: 1;
         background-color: rgba(255, 255, 255, 0.5);
         top: 0;
+        margin-bottom: 20px;
     }
     header nav {
         align-items: center;
@@ -205,10 +206,10 @@
         height: 300p;
     }
     #proyect{
-        display: block;
+        display: flex;
+
         max-width: 100%;
         text-align: center;
-        display: block;
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -249,7 +250,7 @@
     }
     #who{
         position: absolute;
-        width: 100vw;
+        width: 90vw;
         padding-top: 50px;
         background: rgb(150, 150, 150);
         background-repeat: no-repeat;
