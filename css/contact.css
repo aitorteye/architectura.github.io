@@ -227,3 +227,36 @@ button {
   button:hover svg {
     transform: rotate(45deg);
   }
+  #section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #353535;
+  }
+
+  #section .conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section .center {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  #section .links {
+    text-align: left;
+  }
+
+  #section a {
+    color: #353535;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  #section a:hover {
+    text-decoration: underline;
+  }
