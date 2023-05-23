@@ -117,6 +117,7 @@
         background-color: rgb(150, 150, 150);
         margin: 0;
         padding: 0;
+        position: relative;
     }
     body .hero{
         display: flex;
@@ -207,7 +208,6 @@
     }
     #proyect{
         display: flex;
-
         max-width: 100%;
         text-align: center;
         justify-content: center;
@@ -220,6 +220,7 @@
         background-position: center;
         z-index: -1;
         gap: 1.5rem;
+        padding-bottom: 150px;
     }
     .proyect_titulo{
         margin-bottom: 50px;
@@ -249,17 +250,17 @@
         margin-top: 20px;
     }
     #who{
-        position: absolute;
-        width: 90vw;
-        padding-top: 50px;
+        width: 100%;
+        min-height: 100vh;
         background: rgb(150, 150, 150);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
         align-items: center;
+        text-align: center;
         gap: 1.5rem;
-        display: inline-block;
     }
     .con_who{
         position: absolute;
@@ -294,4 +295,40 @@
         max-width: 70%;
         height: auto;
         margin-bottom: 100px;
+    }
+    .content {
+        min-height: calc(100vh - 60px); /* Restar la altura del footer */
+    }
+    #section {
+      width: 100%;
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #353535;
+    }
+
+    #section .conta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #section .center {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    #section .links {
+      text-align: left;
+    }
+
+    #section a {
+      color: #353535;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    #section a:hover {
+      text-decoration: underline;
     }
